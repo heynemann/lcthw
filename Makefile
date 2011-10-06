@@ -1,6 +1,9 @@
 all: clean
 	@for c in `ls chapters`; do make run c=$$c && echo ''; done
 
+test: clean
+	@for c in `ls chapters`; do make run c=$$c && valgrind chapters/$$c/ex$$c && echo ''; done
+
 clean:
 	@find . -name '*.o' -delete
 
