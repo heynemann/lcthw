@@ -7,6 +7,7 @@ int main(int argc, char* argv[]) {
     char initial = 'A';
     char first_name[] = "Zed";
     char last_name[] = "Shaw";
+    char empty_string[] = "";
 
     printf("You are %d miles away now.\n", distance);
     printf("You have %f levels of power.\n", power);
@@ -15,6 +16,7 @@ int main(int argc, char* argv[]) {
     printf("I have a first name of '%s'.\n", first_name);
     printf("I have a last name of '%s'.\n", last_name);
     printf("My whole name is %s %c. %s.\n", first_name, initial, last_name);
+    printf("empty string is empty: '%s'.\n", empty_string);
 
     return 0;
 }
